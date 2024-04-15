@@ -41,9 +41,10 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col">
-                    <textarea v-model="textarea.clearTextFormatting" id="input" class="form-control p-4"
+                    <textarea v-model="textarea.clearTextFormatting" id="textarea" class="form-control p-4"
                         rows="12"></textarea>
                     <button type="button" @click="clearTextFormatting()" class="btn btn-success mt-3">Clear</button>
+                    <button type="button" @click="copyTextToClipboard()" class="btn btn-secondary mt-3">Copy</button>
                 </div>
             </div>
         </div>
