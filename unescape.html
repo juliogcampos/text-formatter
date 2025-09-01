@@ -39,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="unescape.html">
+                            <a class="nav-link" href="#">
                                 Unescape
                             </a>
                         </li>
@@ -52,16 +52,17 @@
             <div class="row">
                 <div class="col">
 
-                    <h2 class="mb-3">Remove excess whitespace</h2>
+                    <h2 class="mb-3">Unescape text</h2>
+                    <p>Removes \n and inserts real line break.</p>
 
-                    <textarea v-model="textarea.whitespace" id="textarea" class="form-control" rows="12">
+                    <textarea v-model="textarea.unescape" id="textarea" class="form-control" rows="12">
                     </textarea>
 
                     <div class="d-flex justify-content-end mt-3">
 
-                        <button type="button" @click="clearTextarea" class="btn btn-outline-dark ms-2">Clear</button>
-                        <button type="button" @click="removeExcessWhitespace" class="btn btn-success ms-2">Format</button>
-                        <button type="button" @click="copyTextToClipboard('whitespace')"
+                        <button type="button" @click="clear" class="btn btn-outline-dark ms-2">Clear</button>
+                        <button type="button" @click="unescapeText" class="btn btn-success ms-2">Unescape</button>
+                        <button type="button" @click="copyTextToClipboard('unescape')"
                             class="btn btn-secondary ms-2">Copy</button>
                     </div>
 
